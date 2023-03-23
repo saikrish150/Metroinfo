@@ -1,0 +1,256 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Hyderabadmetro info</title>
+</head>
+
+<body>
+  <nav class="nav">
+    
+    <li class="logo"><a>Metro<span style="color: black; font-weight: 300;">info</span></a></li>
+    <div class="list">
+      <ul>
+        <i id="close" class="fa fa-times" aria-hidden="true"></i>
+      
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a onclick="showAlert()">Account</a></li>
+      </ul>
+      <i id="menu" class="fa fa-bars" ></i>
+      
+    </div>
+
+  </nav>
+    <div class="homee">
+      <h1>Hyderabad metro staion info</h1>
+      <form id="form">
+        <label id="fn">From: </label>
+        <select id="Start_Station" name="start_station">
+          <option value="">Start Station</option>
+          <option value="Miyapur">Miyapur</option>
+          <option value="JNTU College">JNTU College</option>
+          <option value="KPHB Colony">KPHB Colony</option>
+          <option value="Kukatpally">Kukatpally</option>
+          <option value="Balanagar">Balanagar</option>
+          <option value="Moosapet">Moosapet</option>
+          <option value="Bharat Nagar">Bharat Nagar</option>
+          <option value="Erragadda">Erragadda</option>
+          <option value="ESI Hospital">ESI Hospital</option>
+          <option value="SR Nagar">SR Nagar</option>
+          <option value="Ameerpet">Ameerpet</option>
+          <option value="Punjagutta">Punjagutta</option>
+          <option value="Irrum Manzil">Irrum Manzil</option>
+          <option value="Khairatabad">Khairatabad</option>
+          <option value="Lakdikapul">Lakdikapul</option>
+          <option value="Assembly">Assembly</option>
+          <option value="Nampally">Nampally</option>
+          <option value="Gandhi Bhavan">Gandhi Bhavan</option>
+          <option value="Osmania Medical College">Osmania Medical College</option>
+          <option value="Malakpet">Malakpet</option>
+          <option value="New Market">New Market</option>
+          <option value="Musarambagh">Musarambagh</option>
+          <option value="Dilsukhnagar">Dilsukhnagar</option>
+          <option value="Chaitanyapuri">Chaitanyapuri</option>
+          <option value="Victoria Memorial">Victoria Memorial</option>
+          <option value="LB Nagar">LB Nagar</option>
+          <option value="Nagole">Nagole</option>
+          <option value="Uppal">Uppal</option>
+          <option value="Stadium">Stadium</option>
+          <option value="NGRI">NGRI</option>
+          <option value="Habsiguda">Habsiguda</option>
+          <option value="Tarnaka">Tarnaka</option>
+          <option value="Mettuguda">Mettuguda</option>
+          <option value="Secunderabad East">Secunderabad East</option>
+          <option value="Parade Grounds">Parade Ground</option>
+          <option value="Paradise">Paradise</option>
+          <option value="Rasoolpura">Rasoolpura</option>
+          <option value="Prakesh Nagar">Prakash Nagar</option>
+          <option value="Begumpet">Begumpet</option>
+          <option value="Madhura Nagar">Madhura Nagar</option>
+          <option value="Yusufguda">Yusufguda</option>
+          <option value="Jubilee Hills Road No.5">Jubilee Hills Road No. 5</option>
+          <option value="Jubilee Hills Check Post">Jubilee Hills Checkpost</option>
+          <option value="Pedamma Temple">Pedamma Temple</option>
+          <option value="Madhapur">Madhapur</option>
+          <option value="Durgam Chervu">Durgam Cheruvu</option>
+          <option value="HITEC City">HITEC City</option>
+          <option value="Raidurg">Raidurg</option>
+          <option value="JBS">JBS</option>
+          <option value="Secunderabad West">Secunderabad West</option>
+          <option value="Gandhi Hospital">Gandhi Hospital</option>
+          <option value="Musheerabad">Musheerabad</option>
+          <option value="RTC Cross Roads">RTC Cross Roads</option>
+          <option value="Chikkadpally">Chikkadpally</option>
+          <option value="Narayanguda">Narayanguda</option>
+          <option value="Sultan Bazar">Sultan Bazar</option>
+          <option value="MG Bus Station">MG Bus station</option>
+        </select>
+        <br><br>
+        <label id="dn">To: </label>
+        <select id="Destination_Station" name="start_station">
+          <option value="">Destination Station</option>
+          <option value="Miyapur">Miyapur</option>
+          <option value="JNTU College">JNTU College</option>
+          <option value="KPHB Colony">KPHB Colony</option>
+          <option value="Kukatpally">Kukatpally</option>
+          <option value="Balanagar">Balanagar</option>
+          <option value="Moosapet">Moosapet</option>
+          <option value="Bharat Nagar">Bharat Nagar</option>
+          <option value="Erragadda Road">Erragadda</option>
+          <option value="ESI Hospital">ESI Hospital</option>
+          <option value="SR Nagar">SR Nagar</option>
+          <option value="Ameerpet">Ameerpet</option>
+          <option value="Punjagutta">Punjagutta</option>
+          <option value="Irrum Manzil">Irrum Manzil</option>
+          <option value="Khairatabad">Khairatabad</option>
+          <option value="Lakdikapul">Lakdikapul</option>
+          <option value="Assembly">Assembly</option>
+          <option value="Nampally">Nampally</option>
+          <option value="Gandhi Bhavan">Gandhi Bhavan</option>
+          <option value="Osmania Medical College">Osmania Medical College</option>
+          <option value="Malakpet">Malakpet</option>
+          <option value="New Market">New Market</option>
+          <option value="Musarambagh">Musarambagh</option>
+          <option value="Dilsukhnagar">Dilsukhnagar</option>
+          <option value="Chaitanyapuri">Chaitanyapuri</option>
+          <option value="Victoria Memorial">Victoria Memorial</option>
+          <option value="LB Nagar">LB Nagar</option>
+          <option value="Nagole">Nagole</option>
+          <option value="Uppal">Uppal</option>
+          <option value="Stadium">Stadium</option>
+          <option value="NGRI">NGRI</option>
+          <option value="Habsiguda">Habsiguda</option>
+          <option value="Tarnaka">Tarnaka</option>
+          <option value="Mettuguda">Mettuguda</option>
+          <option value="Secunderabad East">Secunderabad East</option>
+          <option value="Parade Grounds">Parade Ground</option>
+          <option value="Paradise">Paradise</option>
+          <option value="Rasoolpura">Rasoolpura</option>
+          <option value="Prakesh Nagar">Prakash Nagar</option>
+          <option value="Begumpet">Begumpet</option>
+          <option value="Madhura Nagar">Madhura Nagar</option>
+          <option value="Yusufguda">Yusufguda</option>
+          <option value="Jubilee Hills Road No.5">Jubilee Hills Road No. 5</option>
+          <option value="Jubilee Hills Check Post">Jubilee Hills Checkpost</option>
+          <option value="Pedamma Temple">Pedamma Temple</option>
+          <option value="Madhapur">Madhapur</option>
+          <option value="Durgam Chervu">Durgam Cheruvu</option>
+          <option value="HITEC City">HITEC City</option>
+          <option value="Raidurg">Raidurg</option>
+          <option value="JBS">JBS</option>
+          <option value="Secunderabad West">Secunderabad West</option>
+          <option value="Gandhi Hospital">Gandhi Hospital</option>
+          <option value="Musheerabad">Musheerabad</option>
+          <option value="RTC Cross Roads">RTC Cross Roads</option>
+          <option value="Chikkadpally">Chikkadpally</option>
+          <option value="Narayanguda">Narayanguda</option>
+          <option value="Sultan Bazar">Sultan Bazar</option>
+          <option value="MG Bus Station">MG Bus station</option>
+        </select>
+        <br><br>
+        <button id="submit_button" onclick="scrollToOutput()">Find path</button>
+
+
+      </form>
+    </div>
+
+    <div id="output" >Click on  <span style="color: brown; font-weight: 700; padding: 0px 5px;"> Find path </span> to get the path</div>
+    
+    <div id="color">
+      <div class="circle"></div>
+      <span >-->Redline</span>
+      <div class="circle1"></div>
+      <span>-->Blue Line</span>
+      <div class="circle2"></div>
+      <span>-->Green Line</span>
+      <div class="circle3"></div>
+      <span>-->Interchange</span>
+
+    </div>
+      
+  
+
+    
+    <div id="tableheadinh"><h1 > <span style="border-bottom: 2px solid rgb(28, 23, 23);">More rout information</span></h1></div>
+   
+    <div class="table">
+      
+      <table id="info-table">
+        <tr>
+          <td>No. of Stations:</td>
+          <td id="num-stations"></td>
+        </tr>
+        <tr>
+          <td>Estimate Time:</td>
+          <td id="estimate-time"></td>
+        </tr>
+        <tr>
+          <td>No. of Interchanges:</td>
+          <td id="num-interchanges"></td>
+        </tr>
+        <tr>
+          <td>No. of Line Changes:</td>
+          <td id="num-line-changes"></td>
+        </tr>
+        <tr>
+          <td>Estimation Cost:</td>
+          <td id="estimate-cost"></td>
+        </tr>
+      </table>
+    </div>
+    <hr><br><br>
+    <div id="info">
+      <h1>Metro Travel Guidelines</h1>
+      <h2>Do's: </h2><br>
+      <ul>
+        <li>✔ Plan your journey ahead of time and check the train schedule to avoid any delays.</li>
+        <li>✔  Keep your belongings close to you at all times and avoid displaying expensive items like jewelry or electronic gadgets.</li>
+        <li>✔ Stand behind the yellow line on the platform until the train arrives and wait for passengers to exit before boarding.</li>
+        <li>✔ Hold onto handrails or grab handles when standing inside the train to maintain balance.</li>
+        <li>✔ Be considerate of other passengers and offer your seat to those in need, such as elderly or pregnant passengers.</li>
+        <li>✔ Follow any announcements or instructions given by the train operator or station staff.</li>
+        <li>✔ Keep the metro station and train clean and tidy by disposing of trash in designated bins.</li><br>
+      </ul>
+
+      <h2>Don'ts:</h2><br>
+      <ul>
+        <li>❌ Do not run or push other passengers while boarding or exiting the train.</li>
+        <li>❌ Do not block the train doors and allow passengers to exit before boarding 🚷.</li>
+        <li>❌ Do not eat or drink on the train or in the station, except in designated areas🚭.</li>
+        <li>❌ Do not play loud music or use your mobile phone in speaker mode inside the train 🔕.</li>
+        <li>❌ Do not use foul language or engage in disruptive behavior that may disturb other passengers.</li>
+        <li>❌ Do not use emergency exits or break any safety rules or regulations.</li><br>
+      </ul>
+
+      <h2>Precautions:</h2><br>
+      <ul >
+        <li >❗ 😷 Always carry a face mask and wear it properly throughout the journey to prevent the spread of germs and viruses.</li>
+        <li>❗ Use hand sanitizers or wash your hands frequently, especially after touching any surfaces.</li>
+        <li>❗Avoid touching your face, mouth, or eyes while traveling and cover your mouth and nose when coughing or sneezing.</li>
+        <li>❗ Maintain physical distancing whenever possible and avoid crowded trains or stations.</li>
+        <li>❗ Use contactless payment methods or smart cards to avoid physical contact with ticket machines or counters.</li>
+        <li>❗ If you feel unwell or exhibit any symptoms, avoid traveling and seek medical attention immediately.</li><br>
+      </ul>
+      <h1>🤗Happy journey🚆</h1>
+      <br>
+      <br>
+      
+    </div>
+    
+    
+    
+  <script src="index.js">
+  </script>
+</body>
+
+</html>

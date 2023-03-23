@@ -1,0 +1,90 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <title>Metroinfo</title>
+</head>
+
+<body>
+  <nav class="nav">
+    
+    <li class="logo"><a>Metro<span style="color: black; font-weight: 300;">info</span></a></li>
+    <div class="list">
+      <ul>
+        <i id="close" class="fa fa-times" aria-hidden="true"></i>
+      
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a  onclick="showAlert()" title="will be soon" class="hover-text" style="color: rgb(75, 75, 108);">Account</a></li>
+      </ul>
+      <i id="menu" class="fa fa-bars" ></i>
+      
+    </div>
+
+  </nav>
+  <section class="home">
+    <h1>Citys <span style="color:black;font-size: 40px;"> We </span>provide</h1>
+    <p>Please choose your preferred metro city from the options below to get started. Our website provides information and services for each of these bustling cities, so you can stay up-to-date and Save the most of your time in your chosen location.</p>
+
+    
+    <div class="text">
+      <ul>
+          <li class="hyd" ><a href="hyderabad.html">
+          <img src="images/jas.jpeg" alt="Hydearbadicon" >
+          </a></li>
+          <li ><a href=""><img src="images/chennai.jpg" alt="chennaidicon" >
+          </a></li>
+          <li ><a href=""><img src="images/bang.jpg" alt="bangaloreicon" >
+          </a></li>
+          <li ><a href=""><img src="images/delh.jpg" alt="Delhiicon" >
+          </a></li>
+          
+      </ul>
+
+    </div>
+
+  </section>
+  <footer>
+    <div class="f1">
+      <h3 style="color:azure">Social media accounts</h4>
+      <ul class="fo">
+        <li><a href="mailto:gsaikrishna150@gmail.com.com" target="_blank"><i class="fa-solid fa-square-envelope"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="http://www.linkedin.com/in/sai-krishna-g-179030210" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/saikrish__" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="href=tel:+918688373517" target="_blank"><i class="fas fa-phone"></i></a></li>
+        <br>
+        <br>
+        <p style="font-size: small;">&copy; 2023 Metroinfo. All Rights Reserved.</p>
+      </ul>
+      
+    </div>
+
+
+  </footer>
+   
+
+  <script >
+    $("#menu").click(function(){
+      $(".nav ul").addClass("activer")
+    })
+    $("#close").click(function(){
+      $(".nav ul").removeClass("activer")
+    })
+    function showAlert() {
+      alert("Hello! Accounts will available soon.");
+    }
+  </script>
+    
+</body>
+
+</html>

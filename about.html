@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="about.css" />
+  <title>About metro info</title>
+</head>
+
+<body>
+    <nav class="nav">
+      
+      <li class="logo"><a>Metro<span style="color: black; font-weight: 300;">info</span></a></li>
+      <div class="list">
+        <ul>
+          <i id="close" class="fa fa-times" aria-hidden="true"></i>
+        
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="" class="hover-text">Account</a></li>
+        </ul>
+        <i id="menu" class="fa fa-bars" ></i>
+        
+      </div>
+
+    </nav>
+    <main>
+      <section class="hero">
+        <h1>About MetroInfo</h1><br>
+        <p>MetroInfo is a user-friendly web application designed to help commuters quickly and easily find the most efficient route between metro stations in different cities. With its intuitive interface and accurate information, MetroInfo makes navigating metro systems a breeze.</p>
+        <p>This innovative tool is part of our mission to improve urban transportation for all. Whether you're a daily commuter or a tourist exploring a new city, MetroInfo provides the shortest and most reliable path to get you to your destination in a timely and hassle-free manner. Say goodbye to the stress of navigating unknown metro systems and hello to MetroInfo - your ultimate Metro guide.</p>
+      </section>
+  
+      <section class="features">
+        <h2>Features</h2>
+        <ul>
+          <li>Efficient pathfinding algorithm</li>
+          <li>User-friendly interface</li>
+          <li>Accurate information on stations and routes</li>
+          <li>Provided estimate-time</li>
+          <li>Total rout info with interchanges</li>
+        </ul>
+      </section>
+  
+      <section class="future-scope">
+        <h2>Future Scope</h2>
+        <p>We believe that transportation should be accessible to everyone, and that's why we're working hard to expand our services to all metro cities in the country. Our future plans include adding platform details and timings for each station, so our customers can plan their trips more efficiently.</p>
+        <p>By providing comprehensive information on metro stations and routes, we hope to make commuting more hassle-free and enjoyable for all. Our team of dedicated professionals is always working to improve the user experience and provide the best possible service to our customers.</p>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; 2023 MetroInfo. All rights reserved.</p><br>
+      <p>Developed by G Sai Krishna</p>
+    </footer>
+    <script>
+      $("#menu").click(function(){
+       $(".nav ul").addClass("activer")
+      })
+      $("#close").click(function(){
+       $(".nav ul").removeClass("activer")
+      })
+      function showAlert() {
+      alert("Hello!  Accounts will available soon..");
+      } 
+    </script>
+      
+</body>

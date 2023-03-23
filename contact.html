@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+</head>
+<body>
+
+  <nav class="nav">
+    
+    <li class="logo"><a>Metro<span style="color: black; font-weight: 300;">info</span></a></li>
+    <div class="list">
+      <ul>
+        <i id="close" class="fa fa-times" aria-hidden="true"></i>
+      
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a onclick="showAlert()" class="hover-text">Account</a></li>
+      </ul>
+      <i id="menu" class="fa fa-bars" ></i>
+      
+    </div>
+  </nav>
+  <div>
+  <header>
+    <h1 class="hed">Contact Us</h1>
+  </header>
+  </div>
+  <main>
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i>Hydearbad,Telangana</li>
+        <li><i href="tel:+918688373517" target="_blank" class="fas fa-phone"></i>868837xxxx</li>
+        <li><i class="fas fa-envelope"></i><a style="text-decoration: none; color: black;" href="mailto:gsaikrishna150@gmail.com.com" target="_blank">gsaikrishna150@gmail.com</a></li>
+        <li>
+          <ul class="social-icons">
+            <li><a href="http://www.linkedin.com/in/sai-krishna-g-179030210" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/saikrish__" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Metroinfo. All Rights Reserved.</p><br>
+    <p>Developed by G Sai Krishna</p>
+  </footer>
+  <script>
+    $("#menu").click(function(){
+      $(".nav ul").addClass("activer")
+    })
+    $("#close").click(function(){
+      $(".nav ul").removeClass("activer")
+    })
+    function showAlert() {
+      alert("Hello!  Accounts will available soon..");
+    } 
+  </script>
+</body>
+</html>
+
+
+</html>
