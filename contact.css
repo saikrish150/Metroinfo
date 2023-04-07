@@ -204,7 +204,7 @@ nav logo {
     text-align: center;
   }
 } */
-@media (max-width:700px){
+@media (max-width:720px){
   .nav {
     background-color: none;
     height: 70px;
